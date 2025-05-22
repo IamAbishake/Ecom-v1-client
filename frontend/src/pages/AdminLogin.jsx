@@ -17,7 +17,7 @@ const AdminLogin = () => {
   useEffect(() => {
     const checkAdminAuth = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/api/admin/profile', {
+        const { data } = await axios.get('https://ecom-v1-server.onrender.com/api/admin/profile', {
           withCredentials: true
         });
         
@@ -45,7 +45,7 @@ const AdminLogin = () => {
     setLoading(true);
     
     try {
-      const response = await axios.post('http://localhost:5000/api/admin/login', formData, {
+      const response = await axios.post('https://ecom-v1-server.onrender.com/api/admin/login', formData, {
         withCredentials: true
       });
       

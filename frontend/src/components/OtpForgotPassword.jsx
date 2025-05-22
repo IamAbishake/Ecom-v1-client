@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const OtpForgotPassword = () => {
   const [email, setEmail] = useState('');
   const navigate = useNavigate();
-  const React_Url= "https://abi-ecom.onrender.com"
+  const React_Url= "https://ecom-v1-server.onrender.com"
 
   const handleSubmit = async (e) => {
     e.preventDefault();

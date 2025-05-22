@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const VerifyOtp = () => {
-  const React_Url= "https://abi-ecom.onrender.com"
+  const React_Url= "https://ecom-v1-server.onrender.com"
 
   const [otp, setOtp] = useState(['', '', '', '', '', '']);
   const [timer, setTimer] = useState(60);

@@ -42,7 +42,7 @@ const AdminProductList = () => {
   const fetchProducts = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:5000/api/admin/products",
+        "https://ecom-v1-server.onrender.com/api/admin/products",
         {
           withCredentials: true,
         }
@@ -75,7 +75,7 @@ const AdminProductList = () => {
   const handleDelete = async () => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/admin/products/${deleteId}`,
+        `https://ecom-v1-server.onrender.com/api/admin/products/${deleteId}`,
         {
           withCredentials: true,
         }
@@ -96,7 +96,7 @@ const AdminProductList = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/api/admin/logout",
+        "https://ecom-v1-server.onrender.com/api/admin/logout",
         {},
         {
           withCredentials: true,

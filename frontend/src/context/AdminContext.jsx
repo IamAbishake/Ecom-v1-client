@@ -21,7 +21,7 @@ export const AdminProvider = ({ children }) => {
 
   const fetchAdminData = async () => {
     try {
-      const { data } = await axios.get('http://localhost:5000/api/admin/profile', {
+      const { data } = await axios.get('https://ecom-v1-server.onrender.com/api/admin/profile', {
         withCredentials: true
       });
       
@@ -37,7 +37,7 @@ export const AdminProvider = ({ children }) => {
   };
 
   const login = async (credentials) => {
-    const { data } = await axios.post('http://localhost:5000/api/admin/login', credentials, {
+    const { data } = await axios.post('https://ecom-v1-server.onrender.com/api/admin/login', credentials, {
       withCredentials: true
     });
     
@@ -48,7 +48,7 @@ export const AdminProvider = ({ children }) => {
 
   const logout = async () => {
     try {
-      await axios.post('http://localhost:5000/api/admin/logout', {}, {
+      await axios.post('https://ecom-v1-server.onrender.com/api/admin/logout', {}, {
         withCredentials: true
       });
     } catch (error) {

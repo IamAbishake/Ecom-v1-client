@@ -48,7 +48,7 @@ const AdminProductForm = () => {
       const fetchProduct = async () => {
         setLoading(true);
         try {
-          const { data } = await axios.get(`http://localhost:5000/api/admin/products/${id}`, {
+          const { data } = await axios.get(`https://ecom-v1-server.onrender.com/api/admin/products/${id}`, {
             withCredentials: true
           });
           console.log("data", data)
@@ -98,12 +98,12 @@ const AdminProductForm = () => {
       let response;
       
       if (isEditMode) {
-        response = await axios.put(`http://localhost:5000/api/admin/products/${id}`, formattedData, {
+        response = await axios.put(`https://ecom-v1-server.onrender.com/api/admin/products/${id}`, formattedData, {
           withCredentials: true
         });
         setSuccess('Product updated successfully!');
       } else {
-        response = await axios.post('http://localhost:5000/api/admin/products', formattedData, {
+        response = await axios.post('https://ecom-v1-server.onrender.com/api/admin/products', formattedData, {
           withCredentials: true
         });
         setSuccess('Product created successfully!');
@@ -164,7 +164,7 @@ const AdminProductForm = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/api/admin/logout",
+        "https://ecom-v1-server.onrender.com/api/admin/logout",
         {},
         {
           withCredentials: true,

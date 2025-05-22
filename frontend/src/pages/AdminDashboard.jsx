@@ -15,7 +15,7 @@ const AdminDashboard = () => {
     const fetchAdminProfile = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/admin/profile",
+          "https://ecom-v1-server.onrender.com/api/admin/profile",
           {
             withCredentials: true,
           }
@@ -38,7 +38,7 @@ const AdminDashboard = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/api/admin/logout",
+        "https://ecom-v1-server.onrender.com/api/admin/logout",
         {},
         {
           withCredentials: true,

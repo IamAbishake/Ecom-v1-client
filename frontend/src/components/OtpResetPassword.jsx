@@ -6,7 +6,7 @@ const OtpResetPassword = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [show, setShow] = useState({ new: false, confirm: false });
-  const React_Url= "https://abi-ecom.onrender.com"
+  const React_Url= "https://ecom-v1-server.onrender.com"
 
 
   const email = localStorage.getItem('resetEmail');

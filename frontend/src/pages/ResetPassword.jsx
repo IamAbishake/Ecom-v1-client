@@ -4,7 +4,7 @@ import axios from "axios";
 import { Eye, EyeOff } from "lucide-react"; 
 
 const ResetPassword = () => {
-  const React_Url= "https://abi-ecom.onrender.com"
+  const React_Url= "https://ecom-v1-server.onrender.com"
 
   const { token } = useParams();
   const navigate = useNavigate();

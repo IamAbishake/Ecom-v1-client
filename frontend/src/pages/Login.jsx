@@ -6,7 +6,7 @@ import { loginSuccess } from '../redux/slices/authSlice';
 import { Eye, EyeOff, Shield } from 'lucide-react';
 
 const Login = () => {
-  const React_Url = "https://abi-ecom.onrender.com";
+  const React_Url = "https://ecom-v1-server.onrender.com";
 
   const [form, setForm] = useState({ email: '', password: '' });
   const [showPassword, setShowPassword] = useState(false);

@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 const ForgotPassword = () => {
-  const React_Url= "https://abi-ecom.onrender.com"
+  const React_Url= "https://ecom-v1-server.onrender.com"
 
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");

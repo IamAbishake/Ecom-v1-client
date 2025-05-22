@@ -19,7 +19,7 @@ const AdminProtectedRoute = () => {
         }
         
         // Verify with backend
-        const { data } = await axios.get('http://localhost:5000/api/admin/profile', {
+        const { data } = await axios.get('https://ecom-v1-server.onrender.com/api/admin/profile', {
           withCredentials: true
         });
         

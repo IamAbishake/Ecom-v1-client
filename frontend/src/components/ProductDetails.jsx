@@ -13,7 +13,7 @@ const ProductDetails = () => {
   const [selectedVariant, setSelectedVariant] = useState(null);
   const dispatch = useDispatch();
   const wishlist = useSelector((state) => state.wish.wishItems);
-  const React_Url= "https://abi-ecom.onrender.com"
+  const React_Url= "https://ecom-v1-server.onrender.com"
 
 
   const isInWishlist = wishlist.some((item) => item._id === product._id);

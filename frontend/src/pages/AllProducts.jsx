@@ -11,7 +11,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 const AllProducts = () => {
 
-  const React_Url= "https://abi-ecom.onrender.com"
+  const React_Url= "https://ecom-v1-server.onrender.com"
 
   const [search, setSearch] = useState("");
   const [products, setProducts] = useState([]);
